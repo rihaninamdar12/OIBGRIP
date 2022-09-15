@@ -3,65 +3,45 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: 'Noto Serif', serif;
-}
-
-
 /* Utility class */
 .font {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
+    font-size: 15px;
 }
 
-.font_a {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    color: green;
+
+/* Home Section Styling */
+#Home #content {
+    height: 280px;
+    width: 90%;
+    margin: 20px auto 15px;
 }
 
-#Home {
-    height: 650px;
-    width: 100%;
-    /* border: 2px solid red; */
-}
 
-#Home::before {
-    content: "";
-    position: absolute;
-    background: url("/Images/homepage.jpg") no-repeat center center/cover;
-    height: 650px;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.98;
-}
-
-#logo img {
-    width: 250px;
-}
-
+/* Header inside Home Section Styling */
 
 header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 #logo {
-    margin: 20px 50px;
+    display: block;
+    width: 250px;
+    margin: 40px auto 10px;
 }
 
 #navbar {
     display: flex;
     align-items: center;
-    margin: 0px 90px;
-
+    margin: 0px auto;
 }
 
 #navbar li {
@@ -70,16 +50,10 @@ header {
 
 #navbar li a {
     display: block;
-    padding: 3px 20px;
+    padding: 3px 12px;
     text-decoration: none;
     color: black;
     font-size: 14px;
-}
-
-#navbar li a:hover {
-    background-color: green;
-    border-radius: 20px;
-    color: white;
 }
 
 #language {
@@ -87,23 +61,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 125px
-}
+    margin: 10px 10px;
+    position: absolute;
+    top: 4px;
+    right: 0px;
 
-select {
-    background-color: rgb(250 235 217);
-    border: none;
-    text-decoration: none;
-}
-
-#Home #content {
-    height: 280px;
-    width: 90%;
-    margin: 20px auto 15px;
 }
 
 #content h1 {
-    font-size: 80px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -140,17 +106,17 @@ select {
 
 #bg2 {
     width: fit-content;
-    margin: 49px auto;
+    margin: 104px auto 0px;
 }
 
 #bg2 img {
-    width: 533px;
+    width: 284px;
 }
 
 
 /* About Section Styling */
 #about {
-    height: 1130px;
+    height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -169,19 +135,28 @@ select {
 
 .content-1 {
     margin: 50px 0px 0px 0px;
-    padding: 0px 20px;
-    width: fit-content;
-    height: fit-content;
+    padding: 0px;
+    width: 317px;
+    height: 472px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .content-1 #right-content {
     height: fit-content;
-    width: 445px;
-    margin: 0px 0px 0px 100px;
+    width: 306px;
+
+    margin: auto;
+
 }
+
+.content-1 #right-content h2 {
+    display: inline;
+
+}
+
 
 #right-content button {
     padding: 12px 35px;
@@ -189,7 +164,7 @@ select {
     display: block;
     width: fit-content;
     border: none;
-    margin: 20px 0px;
+    margin: 20px auto;
     border-radius: 30px;
     background-color: #0f866c;
 }
@@ -199,39 +174,50 @@ select {
 }
 
 
-.content-3 #right-content button:hover {
-    cursor: pointer;
-}
-
 .content-2 #right-content img {
     width: 300px;
 }
 
-.content-2 #right-content {
-    width: fit-content;
-}
-
 .content-2 {
+
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: fit-content;
-    padding: 0px 20px;
+    width: 317px;
+    height: 472px;
+    padding: 0px;
 }
 
 .content-2 #left-content {
+    margin-right: 0px;
+    position: absolute;
+    bottom: 0px;
+    left: auto;
     height: fit-content;
-    width: 445px;
-    margin-right: 100px;
+    width: 306px;
+}
+
+.content-2 #left-content h2 {
+    display: inline;
+}
+
+.content-2 #right-content {
+    position: absolute;
+    top: 0px;
+    left: auto;
+    width: fit-content;
 
 }
 
 .content-3 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: fit-content;
-    padding: 0px 20px;
+    width: 317px;
+    padding: 0px;
 
 }
 
@@ -241,8 +227,8 @@ select {
 
 .content-3 #right-content {
     height: fit-content;
-    width: 445px;
-    margin: 0px 0px 0px 100px;
+    width: 306px;
+    margin: auto;
 }
 
 #apps a {
@@ -275,21 +261,18 @@ select {
     border-radius: 4px;
 }
 
-.logo:hover {
-    cursor: pointer;
-}
 
 /* Section #advantages styling */
-
 #advantage {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     margin: 0px 40px;
 }
 
 #advantages {
-    height: 500px;
+    height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -313,29 +296,17 @@ select {
     width: 270px;
 }
 
-.all_link a {
-
-    color: green;
-}
-
-.all_link {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 17px;
-}
-
 
 /* Mapping Section Styling */
 #mapping {
-    height: 670px;
+    height: 635px;
     width: 100%;
 }
 
 #mapping::before {
     content: "";
     position: absolute;
-    height: 670px;
+    height: 635px;
     width: 100%;
     background-color: rgb(244, 187, 196);
     z-index: -1;
@@ -345,32 +316,36 @@ select {
 #mapping>h1 {
     margin: 50px 0px;
     padding: 30px 0px;
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
 }
 
 .map {
-    width: 710px;
-    margin: 0px 0px 0px 200px;
+    width: fit-content;
+    margin-left: 50px;
 }
 
 .map img {
-    width: 700px;
+    display: block;
+    width: 200px;
+    margin-top: 54px;
 }
 
 .record {
     height: 400px;
     width: 100px;
-    margin: 0px 20px;
+    margin-right: 60px;
 }
 
 #country_record {
     display: flex;
+    justify-content: center;
+
 
 }
 
 .align h1 {
-    font-size: 40px;
+    font-size: 20px;
 
 }
 
@@ -378,11 +353,23 @@ select {
 
     width: 80px;
     height: 80px;
-    margin: 35px 0px;
+    margin: 0px;
 }
 
 #bandwidth img {
     width: 50px;
+}
+
+.all_link a {
+
+    color: green;
+}
+
+.all_link {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0px 0px 15px 0px;
+    font-size: 17px;
 }
 
 
@@ -393,7 +380,7 @@ footer {
     height: 40px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
