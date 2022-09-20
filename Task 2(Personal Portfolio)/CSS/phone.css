@@ -1,0 +1,171 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Utility Class */
+.h2-text {
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 0px 20px;
+    width: fit-content;
+    border-radius: 20px;
+    background-color: rgb(84, 82, 82);
+}
+
+
+/* Aside Section  */
+#side-content {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    height: 580px;
+    width: 100%;
+    background-color: rgb(36, 35, 35);
+}
+
+
+/* Introduction Section */
+#container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 610px;
+    left: 0px;
+    height: 579px;
+    width: 100%;
+}
+
+#container-1 #main-content {
+    width: 90%;
+}
+
+#main-content p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+
+/* About Section */
+#container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 0px;
+    top: 1189px;
+    left: 0px;
+    height: 579px;
+    width: 100%;
+}
+
+#info {
+    height: 300px;
+    width: 284px;
+    margin: 50px 0px;
+}
+
+.myinfo span {
+    font-size: 14px;
+}
+
+
+/* Education Section */
+#container-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 0px;
+    top: 1768px;
+    left: 0px;
+    height: 620px;
+    width: 100%;
+}
+
+#about-deg .h2-text1 {
+    font-size: 16px;
+}
+
+#about-deg p {
+    font-size: 14px;
+}
+
+#about-deg {
+    padding: 0px 0px 0px 10px;
+}
+
+.degree {
+    margin-top: 10px;
+    margin-left: 40px;
+    display: flex;
+    height: 160px;
+    width: 280px;
+}
+
+#education-section {
+    height: 470px;
+    width: 100%;
+}
+
+#education-section .progress-bar {
+    width: fit-content;
+    height: 150px;
+}
+
+#education-section .progress-bar #img2 {
+    display: block;
+    margin: auto;
+    width: 30px;
+    height: 70px;
+    filter: invert(100%);
+}
+
+#education-section .progress-bar #img1 {
+    width: 50px;
+    height: 45px;
+    filter: invert(100%);
+}
+
+.degrees {
+    height: 486px;
+    width: 95%;
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Contact Section */
+#container-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 0px;
+    top: 2388px;
+    left: 0px;
+    height: 579px;
+    width: 100%;
+}
+
+#contact1 {
+    height: 300px;
+    width: 500px;
+    margin: 50px 10px;
+}
+
+.mycontact span {
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+#contact1 {
+    height: 300px;
+    width: 270px;
+    margin: 50px 0px;
+}
