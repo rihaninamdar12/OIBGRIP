@@ -1,16 +1,18 @@
-*{
+/* CSS Reset */
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-#heading{
+/* Styling for Heading */
+#heading {
     text-align: center;
     margin: 20px 0px;
     font-size: 16px;
 }
-#container{
-    /* border: 2px solid black; */
+
+#container {
     border-radius: 20px;
     width: 90%;
     height: 550px;
@@ -18,30 +20,50 @@
     margin: 55px auto;
     display: flex;
     flex-direction: column;
-    
-    box-shadow: 3px 3px 3px rgb(94, 94, 239),-3px -3px 3px rgb(94, 94, 239);
-    
+    box-shadow: 3px 3px 3px rgb(94, 94, 239), -3px -3px 3px rgb(94, 94, 239);
 }
 
-#inputs{
+label {
+    font-size: 18px;
+}
+
+#inputs {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#results #output{
+#degree,
+#type,
+#output {
+    margin: 10px 0px;
+    font-size: 16px;
     width: 180px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(90, 90, 90);
+}
+
+#type:focus {
+    cursor: pointer;
 }
 
 #results {
-    /* margin: 30px 0px 0px 25px;
-    margin: 30px auto; */
     margin: 30px 16px 0px 0px;
     width: fit-content;
-    /* border: 2px solid black; */
 }
 
-#btn button{
+#results #output {
+    width: 180px;
+}
+
+
+#btn {
+    width: fit-content;
+    margin: 0px auto;
+}
+
+#btn button {
     display: block;
     width: 160px;
     border: none;
@@ -52,28 +74,4 @@
     font-size: 18px;
     font-family: 'Baloo Bhai 2', cursive;
     margin: 20px 15px 0px auto;
-}
-
-#btn{
-    width: fit-content;
-    margin:0px auto ;
-}
-
-
-label{
-    font-size: 18px;
-    
-}
-
-#degree,#type,#output{
-    margin: 10px 0px;
-    font-size: 16px;
-    width: 180px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid rgb(90, 90, 90);
-}
-
-#type:focus{
-    cursor: pointer;
 }
