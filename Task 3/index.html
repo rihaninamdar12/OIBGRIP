@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" media="Screen and (max-width:1000px)" href="/CSS/phone.css">
+    <script src="/JS/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="container">
+        <div id="heading">
+            <h1>Temperature Converter</h1>
+        </div>
+        <div id="converter">
+            <form action="noaction.php">
+                <div id="inputs">
+                    <div id="inp-deg">
+                        <label for="degree">Degrees</label>
+                        <input type="text" id="degree" placeholder="Enter a number">
+                    </div>
+                    <div id="inp-type">
+                        <label for="type">Type</label>
+                        <select name="temp-types" id="type">
+                            <option value="none" hidden>Select Temperature</option>
+                            <option value="C-F">&#8451; to &#8457;</option>
+                            <option value="C-K">&#8451; to &#8490;</option>
+                            <option value="F-C">&#8457; to &#8451;</option>
+                            <option value="F-K">&#8457; to &#8490;</option>
+                            <option value="K-C">&#8490; to &#8451;</option>
+                            <option value="K-F">&#8490; to &#8457;</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="results">
+                    <label for="output">Result</label>
+                    <div id="result">
+                        <input type="text" id="output">
+                    </div>
+                </div>
+            </form>
+
+            <div id="btn">
+                <button id="convert" onclick="convertion()">Convert</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
